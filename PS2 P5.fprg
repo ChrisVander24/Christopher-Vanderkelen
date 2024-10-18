@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PS2 P5"/>
+        <attribute name="authors" value="chris"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-17 05:26:51 PM"/>
+        <attribute name="created" value="Y2hyaXM7TEFQVE9QLTNLSlFTVklJOzIwMjQtMTAtMTc7MDU6MjA6MzMgUE07MjkxNg=="/>
+        <attribute name="edited" value="Y2hyaXM7TEFQVE9QLTNLSlFTVklJOzIwMjQtMTAtMTc7MDU6MjY6NTEgUE07MTszMDMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="radius, area, perimeter, pie" type="Real" array="False" size=""/>
+            <assign variable="pie" expression="3.174"/>
+            <input variable="radius"/>
+            <assign variable="area" expression="pie * (radius * radius)"/>
+            <assign variable="perimeter" expression="2 * pie * radius"/>
+            <output expression="&quot; The area is &quot; &amp; area &amp; &quot; and the perimeter is &quot; &amp; perimeter" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PS1 P3"/>
+        <attribute name="authors" value="chris"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-16 07:08:16 PM"/>
+        <attribute name="created" value="Y2hyaXM7TEFQVE9QLTNLSlFTVklJOzIwMjQtMTAtMTY7MDY6NDk6MDUgUE07MjkyNg=="/>
+        <attribute name="edited" value="Y2hyaXM7TEFQVE9QLTNLSlFTVklJOzIwMjQtMTAtMTY7MDc6MDg6MTYgUE07MTszMDMy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="length" type="Real" array="False" size=""/>
+            <declare name="width" type="Real" array="False" size=""/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <declare name="perimeter" type="Real" array="False" size=""/>
+            <input variable="length"/>
+            <input variable="width"/>
+            <assign variable="area" expression="length * width"/>
+            <assign variable="perimeter" expression="2 * length + 2 * width"/>
+            <output expression="&quot;area: &quot; &amp; area" newline="True"/>
+            <output expression="&quot;perimeter: &quot; &amp; perimeter" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

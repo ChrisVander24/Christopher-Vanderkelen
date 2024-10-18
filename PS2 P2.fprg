@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PS2 P2"/>
+        <attribute name="authors" value="chris"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-26 07:52:13 PM"/>
+        <attribute name="created" value="Y2hyaXM7TEFQVE9QLTNLSlFTVklJOzIwMjQtMDktMjY7MDc6NDY6MzcgUE07MjkzOA=="/>
+        <attribute name="edited" value="Y2hyaXM7TEFQVE9QLTNLSlFTVklJOzIwMjQtMDktMjY7MDc6NTI6MTMgUE07MTszMDM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="midterm, final, total" type="Real" array="False" size=""/>
+            <input variable="name"/>
+            <input variable="midterm"/>
+            <input variable="final"/>
+            <assign variable="total" expression="midterm+final"/>
+            <output expression="name &amp; &quot;your total points are&quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
