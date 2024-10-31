@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PS4 P2"/>
+        <attribute name="authors" value="chris"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-23 05:25:44 PM"/>
+        <attribute name="created" value="Y2hyaXM7TEFQVE9QLTNLSlFTVklJOzIwMjQtMTAtMjM7MDQ6NDY6NDIgUE07MjkyMA=="/>
+        <attribute name="edited" value="Y2hyaXM7TEFQVE9QLTNLSlFTVklJOzIwMjQtMTAtMjM7MDU6MjU6NDQgUE07MTszMDI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="item" type="String" array="False" size=""/>
+            <declare name="Quantity" type="Integer" array="False" size=""/>
+            <declare name="UnitPrice, ExtendedPrice" type="Real" array="False" size=""/>
+            <input variable="item"/>
+            <input variable="quantity"/>
+            <if expression="Item == &quot;A&quot;">
+                <then>
+                    <assign variable="UnitPrice" expression="10.00"/>
+                </then>
+                <else>
+                    <assign variable="UnitPrice" expression="20.00"/>
+                </else>
+            </if>
+            <assign variable="ExtendedPrice" expression="Quantity * UnitPrice"/>
+            <output expression="&quot; You choose item &quot; &amp; item &amp; &quot; with a Unit Price of $&quot; &amp; UnitPrice &amp; &quot; A total Extended price of $&quot; &amp; ExtendedPrice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
