@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PS1 P5"/>
+        <attribute name="authors" value="chris"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-16 07:54:07 PM"/>
+        <attribute name="created" value="Y2hyaXM7TEFQVE9QLTNLSlFTVklJOzIwMjQtMTAtMTY7MDc6NDU6MjIgUE07MjkyMg=="/>
+        <attribute name="edited" value="Y2hyaXM7TEFQVE9QLTNLSlFTVklJOzIwMjQtMTAtMTY7MDc6NTQ6MDcgUE07MTszMDMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="price, discountpercent, discountamount, discountprice" type="Real" array="False" size=""/>
+            <input variable="price"/>
+            <input variable="discountpercent"/>
+            <assign variable="discountamount" expression="price * discountpercent"/>
+            <assign variable="discountprice" expression="price - discountamount"/>
+            <output expression="&quot;the total discounted price is &quot; &amp; discountprice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
