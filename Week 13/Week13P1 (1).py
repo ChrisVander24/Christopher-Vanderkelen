@@ -1,0 +1,21 @@
+class Employee:
+  def __init__(self, first, last, pay):
+      self.first = first
+      self.last = last
+      self.pay = pay
+      self.email = first + last + "@company.com"
+
+  def bonus(self, rate):
+      empbonus = self.pay * rate
+      return empbonus
+
+
+empl1 = Employee("Corey", "Schafer", 50000)
+empl2 = Employee("Test", "User", 60000)
+
+print(empl1.first, empl1.last, empl1.pay, empl1.email)
+print("Employee 1's bonus is", empl1.bonus(0.10))
+
+print(empl2.first, empl2.last, empl2.pay, empl2.email)
+print("Employee 2's bonus is", empl2.bonus(0.10))
+                
